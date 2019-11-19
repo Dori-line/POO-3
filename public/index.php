@@ -17,7 +17,6 @@ $bike = new Bicycle('black', 2);
 
 
 
-
 $cargo = new MotorWay(4,130);
 $cargo->addVehicle($bike);
 echo '<br>';
@@ -37,12 +36,17 @@ $residence->addVehicle($bike);
 echo '<br>';
 $residence->addVehicle($tesla);
 
+echo '<br>';
+$bike->setCurrentSpeed(11);
+echo $bike->switchOn();
+echo '<br>';
+echo $bike->switchOff();
 
 
-
-
-
-
+echo '<br>';
+echo $tesla->switchOn();
+echo '<br>';
+echo $tesla->switchOff();
 
 
 /*
